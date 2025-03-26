@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Albra-Semi";
   font-display: swap;
-  src: url("../vo-fonts/Albra/Albra-Semi.otf") format("opentype");
+  src: url("../fonts/Albra-Semi.otf") format("opentype");
 }
 @font-face {
   font-family: "Gilroy-Regular";
@@ -44,6 +44,7 @@ h4,
 h5,
 h6 {
   font-family: Albra-Semi;
+  font-weight: bolder;
 }
 
 .row {
@@ -135,67 +136,76 @@ button {
 .footer-section .footer-content {
   position: relative;
 }
+
 .footer-section .footer-content .company-details {
-  color: #ffffff;
+  color: #fff;
   font-size: 1.6rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .footer-section .footer-content .company-details .logo {
   width: 229px;
   height: 64px;
+  margin-bottom: 3rem;
 }
 
 .footer-section .footer-content .footer-setbck {
   position: relative;
   margin-top: 4rem;
 }
+
 .footer-section .footer-content .footer-setbck .quote {
   width: 100%;
   background-color: #ee4136;
   position: relative;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
+
 .footer-section .footer-content .footer-setbck .quote h1 {
   font-size: 3.5rem;
   line-height: 5rem;
-  font-weight: normal;
+  font-weight: 400;
   font-family: Gilroy-Regular;
-  color: #ffffff;
+  color: #fff;
 }
+
 .footer-section .footer-content .footer-setbck .quote .btn-black {
   text-align: center;
   white-space: nowrap !important;
   margin: 0 auto !important;
 }
+
 .footer-section .footer-content .footer-setbck .quicklinks {
   background-color: #000f22;
-  color: #ffffff;
+  color: #fff;
   height: 100%;
   position: relative;
 }
+
 .footer-section .footer-content .footer-setbck .quicklinks .links-text a {
   color: #abb1c3;
-  font-weight: normal;
+  font-weight: 400;
 }
+
 .footer-section .footer-content .footer-setbck .quicklinks .subscribe p {
   color: #abb1c3;
 }
+
 .footer-section .footer-content .footer-setbck .quicklinks .sub-form {
   position: relative;
 }
+
 .footer-section .footer-content .footer-setbck .quicklinks .sub-form input {
   min-height: 40px;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 2rem;
   border-radius: 0.4rem;
   width: 100%;
   font-size: 1.8rem;
 }
-
 .footer-section .footer-content .footer-setbck .quicklinks .sub-form textarea {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 2rem;
   border-radius: 0.8rem;
   width: 100%;
@@ -205,21 +215,23 @@ button {
   color: #717788;
   resize: none;
 }
+
 .footer-section .footer-content .footer-setbck .quicklinks .sub-form .msg-icon {
   display: inline-block;
   position: absolute;
-  right: 0%;
+  right: 0;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translateY(-50%);
 }
 
 .footer-section .footer-content .footer-setbck .bottom-links1 {
-  background-color: #000f22;
   height: auto;
   display: inline;
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 2rem;
   text-align: right;
+  background-color: #000f22 !important;
 }
+
 .footer-section .footer-content .footer-setbck .bottom-links1 a {
   color: #717788;
 }
@@ -227,4 +239,86 @@ button {
 .footer-section .footer-content .footer-setbck .bottom-links1 li {
   margin: 0 0 0 2rem;
   display: inline;
+}
+
+.row .bottom-links1 div {
+  padding: 6px;
+  padding-right: 6rem;
+  width: 100%;
+  background-color: #000f22 !important;
+}
+
+.row p a {
+  color: #e93734 !important;
+  text-decoration: none;
+}
+div#foo-quick-linked {
+  background-color: #000f22;
+  color: #fff;
+}
+div#foo-quick-linked {
+  padding: 30px 30px 0px;
+}
+
+div#foo-quick-linked .row {
+  width: 85%;
+  padding-top: 20px;
+}
+
+div#foo-quick-linked .row:last-child .col-md-6:last-child {
+  margin-top: 0px;
+}
+
+div#foo-quick-linked ul#quick-foo li h6 {
+  font-size: 16px;
+}
+
+div#foo-quick-linked ul#quick-foo li,
+div#foo-quick-linked ul#quick-foo li a {
+  color: #abb1c3 !important;
+  line-height: 4rem;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.footer-section .md-my-13,
+.mtb-13 {
+  margin-top: 13rem !important;
+  margin-bottom: 6rem !important;
+}
+
+#foo-quick-linked .ptb-5 {
+  padding-top: 5rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.footer-section .company-details {
+  min-height: 100% !important;
+}
+
+#foo-quick-linked h4 {
+  margin-bottom: 0px;
+  font-size: 22px;
+}
+
+.our-partner .logo-img:hover {
+  cursor: pointer;
+}
+
+#foo-quick-linked li h4 {
+  font-size: 22px;
+}
+
+.footer-section .footer-content .footer-setbck .bottom-links1 a {
+  color: #717788;
+  font-size: 18px !important;
+}
+
+.footer-setbck {
+  padding: 0;
+}
+
+li.mtb-1.back-to-top {
+  float: right;
+  right: 50px;
 }
