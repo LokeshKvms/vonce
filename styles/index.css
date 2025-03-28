@@ -79,6 +79,14 @@ ul {
   flex-wrap: wrap;
 }
 
+.flex--item-center {
+  align-items: center;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
 button {
   background-color: transparent;
   outline: none;
@@ -94,13 +102,14 @@ button {
   margin-bottom: 1rem;
 }
 
+.mlr-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mtb-13 {
   margin-top: 13rem;
   margin-bottom: 13rem;
-}
-
-.flex--item-center {
-  align-items: center;
 }
 
 .mtb-5 {
@@ -108,6 +117,10 @@ button {
   margin-bottom: 5rem;
 }
 
+.ptb-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .ptb-5 {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
@@ -133,14 +146,85 @@ button {
   text-decoration: none;
 }
 
+.our-partner{
+  position: relative;
+}
+
+.our-partner .partner-tile{
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.our-partner .circleimg {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-position: 10% 20%
+}
+
+.diff {
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+
+.diff .content-details {
+  text-align: center;
+}
+
+.diff .content-details .content-title {
+  font-size: 48px;
+}
+
+.diff .content-details .content-tagline {
+  font-size: 2rem;
+  font-family: Gilroy-Regular;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #ef4136;
+}
+
+.diff .diff-section{
+  margin-right: 132.333px;
+  margin-left: 132.333px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.diff .diff-section .diff-single {
+  width: 800px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  font-family: Gilroy-Regular;
+  line-height: 3rem;
+}
+
+.diff .diff-section .diff-single .diff-title {
+  color: #136b6b;
+  font-size: 28px;
+  font-family: Gilroy-Regular;
+}
+
+.diff .diff-section .diff-single .diff-subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.diff .diff-section .diff-single .diff-desc {
+  color: #353535;
+  margin-top: 0;
+}
+
 .faq-section {
   margin-bottom: 8rem;
 }
 
 .faq-title {
-  font-size: 5rem;
+  font-size: 4.8rem;
   line-height: 6rem;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
   text-align: center;
   margin-top: 8rem;
 }
@@ -157,26 +241,27 @@ button {
   padding-left: 35px;
 }
 
-.faq-section .faq-accordion:before {
+.faq-section .faq-accordion::before {
   content: url("../assets/pluse.png");
   width: 1rem;
   height: 1rem;
   float: left;
-  margin-right: 1.2rem;
+  margin-right: 2rem;
 }
 
-.faq-section .active{
+.faq-section .active {
   border-color: transparent;
 }
 
-.faq-section .active:before {
-    content: url(../assets/minus.png);
-    float: left
+.faq-section .active::before {
+  content: url(../assets/minus.png);
+  float: left;
 }
 
 .faq-section .panel {
   font-size: 1.6rem;
   background-color: transparent;
+  line-height: 2.5rem;
   max-height: 0;
   overflow: hidden;
   margin-left: 3rem;
